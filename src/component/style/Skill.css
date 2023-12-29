@@ -1,0 +1,65 @@
+@keyframes slowWave {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+#menu {
+    background-color: rgba(204, 204, 204, 0.316);
+    width: 750px;
+    border-radius: 10px;
+    text-align: center;
+    height: 60px;
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    right: 150px;
+    animation: slowWave 4s infinite;
+    padding: 15px;
+}
+
+.skill-menu {
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    height: 55px;
+    gap: 30px;
+    text-transform: uppercase;
+}
+
+.skill-menu li a {
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+  
+.skill-menu li a:hover {
+  background-color: rgb(255, 166, 0);
+  color: black;
+}
+
+@media only screen and (max-width:650px) {
+  
+  #menu {
+    right: 0px;
+    width: 350px;
+    height: 60px;
+  }
+  
+  .skill-menu {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+
+}

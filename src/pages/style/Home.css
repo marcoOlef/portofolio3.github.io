@@ -1,0 +1,116 @@
+@keyframes slowWave {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.7);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+  }
+
+  100% {
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.7);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 90%;
+  }
+}
+
+#home {
+  background-color: black;
+  height: 100vh;
+}
+
+.image {
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+}
+
+.image img {
+  height: 650px;
+}
+
+.jumb {
+  color: white;
+  width: 700px;
+  margin: 130px;
+  margin-top: 100px;
+}
+
+.jumb h1 {
+  font-family: 'Lato';
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 70px;
+  overflow: hidden;
+  border-right: 0.5px solid white;
+  white-space: nowrap;
+  margin: 0;
+  animation: typing 3s steps(40) infinite alternate;
+}
+
+.jumb h1 span {
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.jumb p {
+  font-weight: lighter;
+  text-align: justify;
+  width: 500px;
+}
+
+@media only screen and (max-width:650px) {
+  
+  #home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .jumb {
+    margin: 30px;
+    width: 335px;
+  }
+
+  .jumb h1 {
+    font-size: 30px;
+  }
+
+  .jumb h1 span {
+    font-size: 60px;
+  }
+
+  .jumb p {
+    width: 320px;
+  }
+
+  .image {
+    display: none;
+  }
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Epilogue&family=Heebo:wght@500&family=Ingrid+Darling&family=Lato:wght@100;400&family=Lobster&family=Rubik+Scribble&family=Slabo+27px&display=swap');

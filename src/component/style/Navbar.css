@@ -1,0 +1,24 @@
+.title {
+    padding: 20px;
+    padding-left: 120px;
+}
+
+.title h1 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    font-family: 'Lato';
+}
+
+@media only screen and (max-width:650px) {
+    .title {
+        padding-left: 30px;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Epilogue&family=Heebo:wght@500&family=Ingrid+Darling&family=Lato&family=Lobster&family=Rubik+Scribble&family=Slabo+27px&display=swap');

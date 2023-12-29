@@ -1,0 +1,21 @@
+.icon {
+    display: flex;
+    gap: 20px;
+}
+
+.icon img {
+    transition: 1s;
+    padding: 10px;
+}
+
+.icon img:hover {
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width:650px) {
+    .icon {
+        gap: 15px;
+    }
+}
